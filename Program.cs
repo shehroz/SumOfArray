@@ -332,6 +332,8 @@ namespace ConsoleApp2
                 Result = (Convert.ToString(total % 10)) + Result;
                 carry = total / 10;
             }
+            if (carry != 0)
+                Result = carry.ToString() + Result;
             return Result;
         }
     }
